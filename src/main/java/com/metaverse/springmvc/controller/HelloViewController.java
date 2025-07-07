@@ -14,4 +14,10 @@ public class HelloViewController {
     public String htmlRedirect(){
         return "redirect:/hello.html";
     }
+
+    @GetMapping("/html/templates")
+    public String templates(){
+        // ... 내부 로직이 추가 될 수 있음
+        return "hello-templates";
+    }
 }
