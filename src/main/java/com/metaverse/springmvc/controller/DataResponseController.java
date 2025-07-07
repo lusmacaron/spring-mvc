@@ -15,6 +15,6 @@ public class DataResponseController {
 
     @GetMapping("response/json/instance")
     public Star helloInstanceJson() {
-        return new Star("Meta", 232);
+        return new Star("Meta", 55);
     }
 }
