@@ -44,4 +44,10 @@ public class DataRequestController {
     public String helloRequestModelGet(@ModelAttribute Star star) {
         return String.format("Hello, @ModleAttribute로 받은 객체 Get요청, <br> name = %s, age = %d", star.getName(), star.getAge());
     }
+
+    @PostMapping("/form/json")
+    @ResponseBody
+    public String helloPostRequestJson(@RequestBody Star star) {
+        return String.format("Hello, @RequestBody로 받은 JSON -> 객체로 받기, <br> name = %s, age = %d", star.getName(), star.getAge());
+    }
 }
